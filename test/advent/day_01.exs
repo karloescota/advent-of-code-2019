@@ -24,17 +24,17 @@ defmodule AdventTest.Day01Test do
 
   test "cummulative fuel required" do
     mass = 14
-    assert Day01.cummulative_fuel_required(mass) == 2
+    assert Day01.cumulative_fuel_required(mass) == 2
 
     mass = 1969
-    assert Day01.cummulative_fuel_required(mass) == 966
+    assert Day01.cumulative_fuel_required(mass) == 966
 
     mass = 100_756
-    assert Day01.cummulative_fuel_required(mass) == 50346
+    assert Day01.cumulative_fuel_required(mass) == 50346
   end
 
   test "total cummulative fuel required" do
     masses = [14, 1969, 100_756]
-    assert Day01.total_cummulative_fuel_required(masses) == 51314
+    assert Day01.total_cumulative_fuel_required(masses) == 51314
   end
 end
